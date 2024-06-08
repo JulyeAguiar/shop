@@ -2,7 +2,7 @@
 const nextConfig = {
     images:{
         domains: [
-            "media.istockphoto.com", "fakestoreapi.com"
+            "media.istockphoto.com", "fakestoreapi.com", "acdn.mitiendanube.com", 
         ]
     }
 };
