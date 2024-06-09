@@ -1,12 +1,6 @@
-import Image from "next/image"
-import Link from "next/link"
-import styles from "./page.module.css"
 
-
-export default function Header(){
+export default function nfound(){
     return(
-        <div>
-            
-        </div>
+        <div></div>
     )
 }

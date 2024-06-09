@@ -1,42 +1,39 @@
-
 .header{
+  display: flex;
+  top: 0;
+  font-size: 17px;
   background-color: #ffffff;
-  padding: 10px 20px;
+  width: 1550px;
+  height: 75px;
+  filter: drop-shadow(0px 2px 7px #d6d6d6);
+  position: fixed;
+  z-index: 1;
+}
+
+.footer {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  filter: drop-shadow(0px 2px 2px #cacaca);
 }
 
-.linha{
-    margin: 0 10px;
-  }
-  
-.lista{
-    list-style: none;
-    display: flex;
-    padding: 0;
-    margin: 0;
-  }
 
-  .main{
-    height: 100vh;
-  }
+.botao{
+  background-color: #bc19c8;
+  border: none;
+  color: #fff;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+}
 
-
-  .botao{
-    background-color: #bc19c8;
-    border: none;
-    color: #fff;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 8px;
-  }
-  .botao:hover{
-    background-color: #7a2770;
-  }
+.botao:hover{
+  background-color: #7a2770;
+}

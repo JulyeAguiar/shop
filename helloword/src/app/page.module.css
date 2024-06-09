@@ -1,3 +1,4 @@
+
 .produtos{
   margin: 10px;
   background-color: rgb(255, 255, 255);
@@ -5,19 +6,18 @@
   overflow: hidden;
   width: 60vh;
   height: 100vh;
-  border-radius: 5%;
-  border: 1px solid black;
-  font-size: 18px;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
   font-family: "Roboto";
-  filter: drop-shadow(0px 1px 5px #b5b5b5);
-  text-align: center;
+  box-shadow:0 2px 5px #636363;
 }
 
   
 .titulo{
-  padding: 5px;
-  margin: 0;
-  font-size: 17px;
+  font-size: 30px;
+  margin: 15px 0 10px 0;
+  color: #333;
+  text-align: center;
   overflow: hidden; 
   text-overflow: ellipsis; 
   display: -webkit-box;
@@ -29,17 +29,30 @@
   overflow: hidden; 
   text-overflow: ellipsis; 
   display: -webkit-box;
-  -webkit-line-clamp: 3; 
+  -webkit-line-clamp: 6; 
   -webkit-box-orient: vertical; 
+  font-size: 16px;
+  color: #7d7d7d;
+  margin: 10px 0;
+  text-align: center;
+  
 
 }
 .preco{
-  list-style: none;
-  margin: 0px 0px 50px;
-  padding: 5px 0px;
+  font-size: 25px;
+  color: #000;
+  font-weight: bold;
+  margin: 15px 15px;
 }
 
-.precolinha{
-  display: inline;
-  padding-right: 50px;
+.itenslistacard{
+  list-style: none;
+  padding: 0;
+  margin: 10px ;
+  display: flex;
+  justify-content: center;
+}
+
+.linha{
+  margin: 15px 15px;
 }
