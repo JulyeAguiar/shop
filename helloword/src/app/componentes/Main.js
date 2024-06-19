@@ -3,6 +3,7 @@
 import Image from "next/image";
 import styles from "../page.module.css";
 import { useEffect, useState } from "react";
+import Spinner from "./Spinner";
 
 export default function Home() {
   //quando é utilizado o async e o await é voltado para server da aplicação
@@ -30,12 +31,27 @@ useEffect(() => {
     setProduct(lisAux)
   }
 
+  const orderMaiorMenor= ()=>{
+    const lisAux = [...lisProduct].sort((a,b) => b.price - a.price)
+    setProduct(lisAux)
+  }
+  
+  const orderMenorMaior = ()=>{
+    const lisAux = [...lisProduct].sort((a,b) =>  a.price - b.price)
+    setProduct(lisAux)
+  }
+  if(lisProduct[0] == null){
+    return <Spinner/>
+  
+  }
   return (
     <>
     <div className={styles.filters}>
       <div>
         <button onClick={orderAz}>AZ</button>
         <button onClick={orderZa}>ZA</button>
+        <button onClick={orderMenorMaior}>Menor preço para o Maior</button>
+        <button onClick={orderMaiorMenor}>Maior preço para o Menor</button>
       </div>
     </div>
 
